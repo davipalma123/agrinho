@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agricultura Sustentável</title>
+    <style>
+        /* Estilos Globais */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f4f7f4;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Cabeçalho e Navegação */
+        header {
+            background-color: #2e6f40;
+            color: white;
+            padding: 1rem 2rem;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #a2e8b7;
+        }
+
+        /* Seção Hero (Destaque) */
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                        url('https://images.unsplash.com/photo-1593113598332-cd288d649433?auto=format&fit=crop&w=1200&q=80') no-repeat center center/cover;
+            height: 60vh;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 0 20px;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin-bottom: 25px;
+        }
+
+        .btn {
+            background-color: #88b04b;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #6b8e33;
+        }
+
+        /* Conteúdo Principal */
+        .container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .about {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .about h2 {
+            color: #2e6f40;
+            margin-bottom: 15px;
+            font-size: 2rem;
+        }
+
+        .about p {
+            max-width: 800px;
+            margin: 0 auto;
+            color: #555;
+        }
+
+        /* Cards de Pilares */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            border-top: 5px solid #2e6f40;
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card h3 {
+            color: #2e6f40;
+            margin-bottom: 12px;
+        }
+
+        /* Rodapé */
+        footer {
+            background-color: #222;
+            color: #bbb;
+            text-align: center;
+            padding: 20px;
+            margin-top: 60px;
+            font-size: 0.9rem;
+        }
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            .nav-container {
+                flex-direction: column;
+            }
+            nav ul {
+                margin-top: 15px;
+            }
+            .hero h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="nav-container">
+            <div class="logo">🌱 AgroSustentável</div>
+            <nav>
+                <ul>
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#pilares">Pilares</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero" id="inicio">
+        <h1>Cultivando o Futuro</h1>
+        <p>A agricultura sustentável preserva o meio ambiente, apoia as comunidades e garante alimentos saudáveis para as próximas gerações.</p>
+        <a href="#sobre" class="btn">Saiba Mais</a>
+    </section>
+
+    <main class="container" id="sobre">
+        <section class="about">
+            <h2>O que é Agricultura Sustentável?</h2>
+            <p>É um modelo de produção que equilibra a necessidade de produzir alimentos com a preservação dos recursos naturais (água, solo, biodiversidade). Ela busca ser economicamente viável, socialmente justa e ecologicamente correta.</p>
+        </section>
+
+        <section id="pilares">
+            <h2 style="text-align: center; color: #2e6f40; margin-bottom: 10px;">Principais Práticas</h2>
+            <div class="grid">
+                
+                <div class="card">
+                    <h3>🔄 Rotação de Culturas</h3>
+                    <p>Alternar as espécies plantadas em uma mesma área ajuda a manter os nutrientes do solo, quebra o ciclo de pragas e evita a exaustão da terra.</p>
+                </div>
+
+                <div class="card">
+                    <h3>💧 Manejo de Água</h3>
+                    <p>Uso de técnicas como a irrigação por gotejamento e a captação da água da chuva para reduzir o desperdício desse recurso vital.</p>
+                </div>
+
+                <div class="card">
+                    <h3>🐝 Proteção da Biodiversidade</h3>
+                    <p>Evitar o uso excessivo de defens
